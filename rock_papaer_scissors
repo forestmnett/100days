@@ -1,0 +1,19 @@
+from random import random
+list = ['rock', 'paper', 'scissors']
+print("Welcome to rock paper scissors!!")
+choice = input("Would you like rock, paper, or scissors?")
+computer_choice = random.choice(list)
+if choice == computer_choice:
+    print("It's a tie!")
+elif choice == "rock" and computer_choice == "scissors":
+    print("You win!")
+elif choice == "paper" and computer_choice == "scissors":
+    print("You lose!")
+elif choice == "scissors" and computer_choice == "rock":
+    print("You lose!")
+elif choice == "paper" and computer_choice == "rock":
+    print("You win!")
+elif choice == "scissors" and computer_choice == "paper":
+    print("You win!")
+elif choice == "rock" and computer_choice == "paper":
+    print("You lose!")
